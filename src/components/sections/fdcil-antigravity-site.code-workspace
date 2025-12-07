@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "fdcil-antigravity-site",
+			"path": "../../.."
+		},
+		{
+			"name": "assets",
+			"path": "../../../../../assets"
+		}
+	],
+	"settings": {}
+}

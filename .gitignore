@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local files
+digital-leaders/
+copy-images.sh
+setup-images.js
+IMAGE_SETUP.md

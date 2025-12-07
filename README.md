@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FDC Innovation Labs Website
 
-## Getting Started
+A modern, production-ready website for FDC Innovation Labs - Uttarakhand's First AI Innovation Community.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **UI Components:** ShadCN UI
+- **Icons:** Lucide React
+- **Form Validation:** React Hook Form + Zod
+- **Language:** TypeScript
+
+## ✨ Features
+
+- 🎨 Premium AI-themed dark mode design
+- ✨ Smooth Framer Motion animations
+- 🔍 SEO optimized with metadata
+- 📱 Fully responsive and mobile-first
+- ♿ Accessibility friendly
+- 🎯 High conversion focus
+- 🌐 Production-ready
+
+## 📦 Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Vercel (Recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Deploy automatically
 
-## Learn More
+### Manual Deployment
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Build the project
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# The build output will be in the .next folder
+# Deploy the entire project to your hosting provider
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── about/             # About page
+│   ├── services/          # Services page
+│   ├── training/          # Training page
+│   ├── projects/          # Projects page
+│   ├── testimonials/      # Testimonials page
+│   ├── contact/           # Contact page
+│   ├── book-consultation/ # Booking form
+│   └── page.tsx           # Home page
+├── components/
+│   ├── layout/            # Header, Footer
+│   ├── sections/          # Page sections
+│   └── ui/                # ShadCN UI components
+├── data/
+│   └── site-config.ts     # Site configuration & content
+└── lib/
+    └── utils.ts           # Utility functions
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update Site Content
+
+Edit `src/data/site-config.ts` to update:
+- Company information
+- Services
+- Testimonials
+- Projects
+- Training programs
+- Contact details
+
+### Update Colors
+
+Edit `src/app/globals.css` to customize the color scheme.
+
+### Add New Pages
+
+1. Create a new folder in `src/app/`
+2. Add `page.tsx` and `layout.tsx`
+3. Update navigation in `src/components/layout/Header.tsx`
+
+## 📝 Environment Variables
+
+Copy `env.example` to `.env.local` and configure:
+
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```
+
+## 🔧 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📄 License
+
+© 2024 FDC Innovation Labs. All rights reserved.
+
+## 🤝 Support
+
+For support, email hello@fdcinnovationlabs.com or visit our [Contact Page](https://fdcinnovationlabs.com/contact).
