@@ -14,13 +14,16 @@ A modern, production-ready website for FDC Innovation Labs - Uttarakhand's First
 
 ## ✨ Features
 
-- 🎨 Premium AI-themed dark mode design
+- 🎨 Premium AI-themed design with light/dark mode toggle
 - ✨ Smooth Framer Motion animations
 - 🔍 SEO optimized with metadata
 - 📱 Fully responsive and mobile-first
 - ♿ Accessibility friendly
 - 🎯 High conversion focus
 - 🌐 Production-ready
+- 🎭 Interactive logo hover animations
+- 👥 Team and board member showcases
+- 🎨 Enhanced color schemes and gradients
 
 ## 📦 Installation
 
@@ -42,9 +45,21 @@ npm start
 
 ### Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Import project in Vercel
-3. Deploy automatically
+**Quick Deploy:**
+1. Go to [Vercel](https://vercel.com) and sign in with GitHub
+2. Click "Add New..." → "Project"
+3. Select repository: `fdc_innovation_labs_website`
+4. Click "Deploy" (Vercel auto-detects Next.js settings)
+5. Your site will be live in 2-3 minutes!
+
+**Repository:** https://github.com/adityatonk2/fdc_innovation_labs_website.git
+
+**Features:**
+- ✅ Automatic deployments on every push to `main`
+- ✅ Preview deployments for pull requests
+- ✅ Custom domain support
+- ✅ Environment variables management
+- ✅ Analytics and performance monitoring
 
 ### Manual Deployment
 
