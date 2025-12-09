@@ -54,14 +54,14 @@ export function Header() {
                             <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/20 via-[#7DB8F5]/20 to-[#4A90E2]/20 blur-xl rounded-2xl group-hover:from-[#4A90E2]/30 group-hover:via-[#7DB8F5]/30 group-hover:to-[#4A90E2]/30 transition-all duration-300" />
                             
                             {/* Logo container with premium styling */}
-                            <div className="relative bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md border-2 border-[#4A90E2]/30 rounded-2xl p-2.5 md:p-3 shadow-xl shadow-[#4A90E2]/10 transition-all duration-300 group-hover:border-[#4A90E2]/60 group-hover:shadow-2xl group-hover:shadow-[#4A90E2]/30 group-hover:scale-105">
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="relative bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md border-2 border-[#4A90E2]/30 rounded-lg p-2.5 md:p-3 shadow-xl shadow-[#4A90E2]/10 transition-all duration-300 group-hover:border-[#4A90E2]/60 group-hover:shadow-2xl group-hover:shadow-[#4A90E2]/30 group-hover:scale-105">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 <Image
-                                    src="/fdc-logo.png"
+                                    src="/logo-fixed.svg"
                                     alt="FDC Innovation Labs"
                                     width={72}
                                     height={72}
-                                    className="relative h-14 w-14 md:h-16 md:w-16 object-contain drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300"
+                                    className="relative h-14 w-14 md:h-16 md:w-16 object-contain rounded-lg drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300"
                                     priority
                                 />
                             </div>

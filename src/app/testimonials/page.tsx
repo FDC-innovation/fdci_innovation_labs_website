@@ -47,13 +47,13 @@ export default function TestimonialsPage() {
                     {testimonials.map((testimonial, index) => {
                         const gradient = gradientColors[index % gradientColors.length];
                         return (
-                            <motion.div
-                                key={index}
+                        <motion.div
+                            key={index}
                                 initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.7, delay: index * 0.1 }}
-                            >
+                        >
                                 <Card className="glass-strong h-full hover:glow-blue transition-all duration-300 border-2 border-transparent hover:border-[#4A90E2]/30 group overflow-hidden">
                                     {/* Background gradient effect */}
                                     <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`} />
@@ -70,9 +70,9 @@ export default function TestimonialsPage() {
                                             </div>
                                         </motion.div>
 
-                                        {/* Rating */}
+                                    {/* Rating */}
                                         <div className="flex items-center space-x-1 mb-6">
-                                            {Array.from({ length: testimonial.rating }).map((_, i) => (
+                                        {Array.from({ length: testimonial.rating }).map((_, i) => (
                                                 <motion.div
                                                     key={i}
                                                     initial={{ opacity: 0, scale: 0 }}
@@ -83,41 +83,41 @@ export default function TestimonialsPage() {
                                                 >
                                                     <Star className="w-5 h-5 fill-primary text-primary drop-shadow-sm" />
                                                 </motion.div>
-                                            ))}
-                                        </div>
+                                        ))}
+                                    </div>
 
-                                        {/* Content */}
+                                    {/* Content */}
                                         <p className="text-base text-foreground/90 mb-8 leading-relaxed font-medium">
-                                            "{testimonial.content}"
-                                        </p>
+                                        "{testimonial.content}"
+                                    </p>
 
-                                        {/* Author */}
+                                    {/* Author */}
                                         <div className="flex items-center space-x-4 pt-6 border-t border-border/50">
                                             <motion.div
                                                 whileHover={{ scale: 1.1 }}
                                                 className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center flex-shrink-0 shadow-lg`}
                                             >
                                                 <span className="text-lg font-bold text-white">
-                                                    {testimonial.name.charAt(0)}
-                                                </span>
+                                                {testimonial.name.charAt(0)}
+                                            </span>
                                             </motion.div>
                                             <div className="flex-1">
                                                 <div className="font-bold text-base text-foreground mb-1">
-                                                    {testimonial.name}
-                                                </div>
+                                                {testimonial.name}
+                                            </div>
                                                 <div className="text-sm text-muted-foreground">
                                                     {testimonial.role}
                                                 </div>
                                                 {testimonial.company && (
                                                     <div className="text-xs text-primary/80 mt-1">
                                                         {testimonial.company}
-                                                    </div>
-                                                )}
                                             </div>
+                                                )}
                                         </div>
-                                    </CardContent>
-                                </Card>
-                            </motion.div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </motion.div>
                         );
                     })}
                 </div>

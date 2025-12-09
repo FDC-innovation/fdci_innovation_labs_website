@@ -95,16 +95,16 @@ export default function ServicesPage() {
                                             </CardTitle>
                                             
                                             <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mb-8">
-                                                {service.description}
+                                            {service.description}
                                             </p>
 
                                             <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                                                 <Button asChild className="glow-blue w-fit group/btn">
                                                     <Link href="/book-consultation" className="flex items-center">
-                                                        Talk to an Expert
+                                                Talk to an Expert
                                                         <ArrowRight className="ml-2 w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-                                                    </Link>
-                                                </Button>
+                                            </Link>
+                                        </Button>
                                             </motion.div>
                                         </div>
                                     </motion.div>
@@ -230,24 +230,24 @@ export default function ServicesPage() {
                         </motion.div>
                         
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                            Ready to Get Started?
-                        </h2>
+                        Ready to Get Started?
+                    </h2>
                         <p className="text-lg md:text-xl text-foreground/90 mb-10 max-w-2xl mx-auto">
                             Let's talk about your project. We'll help you find the perfect solution—no complicated tech talk, just clear answers.
-                        </p>
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    </p>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Button asChild size="lg" className="glow-blue text-lg px-8 py-6">
                                     <Link href="/book-consultation" className="flex items-center">
                                         Book Free Consultation
                                         <ArrowRight className="ml-2 w-5 h-5" />
                                     </Link>
-                                </Button>
+                        </Button>
                             </motion.div>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Button asChild size="lg" variant="outline" className="glass text-lg px-8 py-6 border-2">
-                                    <Link href="/contact">Contact Us</Link>
-                                </Button>
+                            <Link href="/contact">Contact Us</Link>
+                        </Button>
                             </motion.div>
                         </div>
                     </div>

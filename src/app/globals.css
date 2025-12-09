@@ -226,12 +226,13 @@
     opacity: 0.03;
   }
 
-  /* Light mode - darker, more visible grid */
+  /* Light mode - refined, subtle grid with better spacing */
   .light .grid-bg {
-    opacity: 0.8;
+    opacity: 0.4;
     background-image:
-      linear-gradient(to right, hsl(0 0% 70%) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(0 0% 70%) 1px, transparent 1px);
+      linear-gradient(to right, hsl(0 0% 75%) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(0 0% 75%) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 
   /* Dark mode - ensure white backgrounds become black */

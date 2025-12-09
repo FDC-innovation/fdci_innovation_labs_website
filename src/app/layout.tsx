@@ -57,22 +57,22 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
         <ThemeProvider>
-          <div className="relative min-h-screen flex flex-col">
-            {/* Background Effects */}
-            <div className="fixed inset-0 -z-10">
-              <div className="absolute inset-0 bg-background" />
+        <div className="relative min-h-screen flex flex-col">
+          {/* Background Effects */}
+          <div className="fixed inset-0 -z-10">
+            <div className="absolute inset-0 bg-background" />
               <div className="absolute inset-0 grid-bg" />
-              <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
-            </div>
-
-            <Header />
-            <main className="flex-1 pt-20 md:pt-28">{children}</main>
-            <Footer />
-
-            {/* Global Conversion Elements */}
-            <WhatsAppFloat />
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
           </div>
+
+          <Header />
+          <main className="flex-1 pt-20 md:pt-28">{children}</main>
+          <Footer />
+
+          {/* Global Conversion Elements */}
+          <WhatsAppFloat />
+        </div>
         </ThemeProvider>
       </body>
     </html>

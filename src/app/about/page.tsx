@@ -87,7 +87,7 @@ export default function AboutPage() {
                             
                             {/* Logo container with premium styling */}
                             <motion.div 
-                                className="relative bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md border-2 border-[#4A90E2]/30 rounded-2xl p-4 md:p-6 shadow-xl shadow-[#4A90E2]/10 transition-all duration-300"
+                                className="relative bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md border-2 border-[#4A90E2]/30 rounded-lg p-4 md:p-6 shadow-xl shadow-[#4A90E2]/10 transition-all duration-300"
                                 animate={{
                                     scale: isLogoHovered ? 1.05 : 1,
                                     borderColor: isLogoHovered ? "rgba(74, 144, 226, 0.6)" : "rgba(74, 144, 226, 0.3)",
@@ -95,16 +95,16 @@ export default function AboutPage() {
                                 transition={{ duration: 0.3 }}
                             >
                                 <motion.div 
-                                    className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5 rounded-xl"
+                                    className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5 rounded-lg"
                                     animate={{ opacity: isLogoHovered ? 1 : 0 }}
                                     transition={{ duration: 0.3 }}
                                 />
                                 <Image
-                                    src="/fdc-logo.png"
+                                    src="/logo-fixed.svg"
                                     alt="FDC Innovation Labs"
                                     width={120}
                                     height={120}
-                                    className="relative h-24 w-24 md:h-32 md:w-32 object-contain drop-shadow-lg transition-all duration-300"
+                                    className="relative h-24 w-24 md:h-32 md:w-32 object-contain rounded-lg drop-shadow-lg transition-all duration-300"
                                     priority
                                 />
                                 
@@ -290,7 +290,8 @@ export default function AboutPage() {
                         },
                         {
                             name: "Arpit Agarwal",
-                            role: "Media & Design Partner",
+                            role: "Advising Partner – Branding, Communications, Content & Strategy",
+                            subtitle: "Communications, Content & Strategy",
                             image: "/team/arpit-agarwal-Media-partener.jpeg",
                             gradient: "from-[#7DB8F5] via-[#4A90E2] to-[#5BA0E8]",
                         },
@@ -319,9 +320,14 @@ export default function AboutPage() {
                                         </motion.div>
                                         <div className="p-6">
                                             <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                                            <p className={`text-base text-foreground/80 bg-gradient-to-r ${member.gradient} bg-clip-text text-transparent font-semibold`}>
+                                            <p className={`text-base text-foreground/80 bg-gradient-to-r ${member.gradient} bg-clip-text text-transparent font-semibold mb-1`}>
                                                 {member.role}
                                             </p>
+                                            {member.subtitle && (
+                                                <p className="text-sm text-muted-foreground">
+                                                    {member.subtitle}
+                                                </p>
+                                            )}
                                         </div>
                                     </div>
                                 </CardContent>

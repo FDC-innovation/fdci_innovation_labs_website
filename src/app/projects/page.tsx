@@ -47,13 +47,13 @@ export default function ProjectsPage() {
                     {projects.map((project, index) => {
                         const gradient = gradientColors[index % gradientColors.length];
                         return (
-                            <motion.div
-                                key={index}
+                        <motion.div
+                            key={index}
                                 initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.7, delay: index * 0.1 }}
-                            >
+                        >
                                 <Card className="glass-strong h-full group hover:glow-blue transition-all duration-300 border-2 border-transparent hover:border-[#4A90E2]/30 overflow-hidden">
                                     {/* Background gradient effect */}
                                     <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`} />
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
                                                 whileHover={{ scale: 1.05 }}
                                                 className={`px-4 py-2 rounded-xl bg-gradient-to-r ${gradient} text-white text-sm font-semibold shadow-lg`}
                                             >
-                                                {project.industry}
+                                            {project.industry}
                                             </motion.div>
                                             <motion.div
                                                 whileHover={{ scale: 1.2, rotate: 45 }}
@@ -79,35 +79,35 @@ export default function ProjectsPage() {
                                         </CardTitle>
                                         
                                         <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                                            {project.description}
+                                        {project.description}
                                         </p>
-                                    </CardHeader>
+                                </CardHeader>
                                     
                                     <CardContent className="relative z-10 p-8 pt-0">
-                                        {/* Tech Stack */}
+                                    {/* Tech Stack */}
                                         <div className="mb-6">
                                             <div className="flex items-center space-x-2 mb-4">
                                                 <Code className="w-5 h-5 text-primary" />
                                                 <h4 className="text-lg font-bold">Tech Stack</h4>
                                             </div>
                                             <div className="flex flex-wrap gap-3">
-                                                {project.tech.map((tech, i) => (
+                                            {project.tech.map((tech, i) => (
                                                     <motion.span
-                                                        key={i}
+                                                    key={i}
                                                         initial={{ opacity: 0, scale: 0.8 }}
                                                         whileInView={{ opacity: 1, scale: 1 }}
                                                         viewport={{ once: true }}
                                                         transition={{ duration: 0.3, delay: i * 0.05 }}
                                                         whileHover={{ scale: 1.1 }}
                                                         className={`px-4 py-2 rounded-lg bg-gradient-to-r ${gradient} bg-opacity-10 border border-primary/20 text-sm font-medium text-foreground hover:bg-opacity-20 transition-all`}
-                                                    >
-                                                        {tech}
+                                                >
+                                                    {tech}
                                                     </motion.span>
-                                                ))}
-                                            </div>
+                                            ))}
                                         </div>
+                                    </div>
 
-                                        {/* Result */}
+                                    {/* Result */}
                                         <div className="pt-6 border-t border-border/50">
                                             <div className="flex items-center space-x-2 mb-3">
                                                 <TrendingUp className="w-5 h-5 text-primary" />
@@ -117,10 +117,10 @@ export default function ProjectsPage() {
                                                 <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                                                 <p className="text-base text-foreground/90 leading-relaxed">{project.result}</p>
                                             </div>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </motion.div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </motion.div>
                         );
                     })}
                 </div>

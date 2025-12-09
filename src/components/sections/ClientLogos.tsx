@@ -2,12 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { HeartPulse, Brain } from "lucide-react";
 
 const clientLogos = [
     {
-        name: "Karmal Health",
+        name: "Karmahealth.ai",
         category: "HealthTech AI",
-        logo: "/clients/karmahealth.jpg",
+        logo: null, // Using icon instead
+        icon: HeartPulse,
         description: "AI-powered landing page"
     },
     {
@@ -90,6 +92,14 @@ export function ClientLogos() {
                                         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 16vw"
                                     />
                                 </div>
+                            ) : client.icon ? (
+                                <motion.div
+                                    whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 0] }}
+                                    transition={{ duration: 0.5 }}
+                                    className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#4A90E2] to-[#7DB8F5] flex items-center justify-center mb-3 group-hover:shadow-lg group-hover:shadow-[#4A90E2]/30 transition-all"
+                                >
+                                    <client.icon className="w-8 h-8 text-white" />
+                                </motion.div>
                             ) : (
                                 <div className="w-16 h-16 rounded-xl bg-gradient-primary/20 flex items-center justify-center mb-3 group-hover:bg-gradient-primary/30 transition-colors">
                                     <span className="text-2xl font-bold text-primary">

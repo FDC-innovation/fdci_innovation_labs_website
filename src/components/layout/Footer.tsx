@@ -50,11 +50,11 @@ export function Footer() {
                         <Link href="/" className="inline-block mb-6">
                             <div className="flex items-center space-x-3 group">
                                 <Image
-                                    src="/fdc-logo.png"
+                                    src="/logo-fixed.svg"
                                     alt="FDC Innovation Labs"
                                     width={56}
                                     height={56}
-                                    className="h-14 w-14 object-contain rounded-xl group-hover:scale-105 transition-transform"
+                                    className="h-14 w-14 object-contain rounded-lg group-hover:scale-105 transition-transform"
                                 />
                                 <div>
                                     <div className="text-xl font-bold gradient-text">FDC Innovation Labs</div>
@@ -153,42 +153,32 @@ export function Footer() {
                 {/* Contact Info */}
                 <div className="mt-12 pt-8 border-t border-border/50">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                        {/* Primary Contact */}
+                        {/* Email Contact */}
                         <div className="flex items-start space-x-3">
                             <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                             <div>
-                                <div className="text-sm font-semibold text-foreground mb-2">Primary Contact - {siteConfig.contact.primary.name}</div>
+                                <div className="text-sm font-semibold text-foreground mb-2">Email</div>
                                 <a
                                     href={`mailto:${siteConfig.contact.primary.email}`}
-                                    className="text-sm text-muted-foreground hover:text-primary transition-colors block mb-1"
-                                >
-                                    {siteConfig.contact.primary.email}
-                                </a>
-                                <a
-                                    href={`tel:${siteConfig.contact.primary.phone}`}
                                     className="text-sm text-muted-foreground hover:text-primary transition-colors block"
                                 >
-                                    {siteConfig.contact.primary.phone}
+                                    {siteConfig.contact.primary.email}
                                 </a>
                             </div>
                         </div>
 
-                        {/* Secondary Contact */}
+                        {/* WhatsApp Contact */}
                         <div className="flex items-start space-x-3">
                             <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                             <div>
-                                <div className="text-sm font-semibold text-foreground mb-2">Secondary Contact - {siteConfig.contact.secondary.name}</div>
+                                <div className="text-sm font-semibold text-foreground mb-2">WhatsApp</div>
                                 <a
-                                    href={`mailto:${siteConfig.contact.secondary.email}`}
-                                    className="text-sm text-muted-foreground hover:text-primary transition-colors block mb-1"
-                                >
-                                    {siteConfig.contact.secondary.email}
-                                </a>
-                                <a
-                                    href={`tel:${siteConfig.contact.secondary.phone}`}
+                                    href={`https://wa.me/${siteConfig.contact.primary.whatsapp.replace(/\s/g, "")}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-sm text-muted-foreground hover:text-primary transition-colors block"
                                 >
-                                    {siteConfig.contact.secondary.phone}
+                                    {siteConfig.contact.primary.whatsapp}
                                 </a>
                             </div>
                         </div>
