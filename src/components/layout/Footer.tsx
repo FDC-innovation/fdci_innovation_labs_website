@@ -49,13 +49,15 @@ export function Footer() {
                     <div className="lg:col-span-2">
                         <Link href="/" className="inline-block mb-6">
                             <div className="flex items-center space-x-3 group">
-                                <Image
-                                    src="/logo-fixed.svg"
-                                    alt="FDC Innovation Labs"
-                                    width={56}
-                                    height={56}
-                                    className="h-14 w-14 object-contain rounded-lg group-hover:scale-105 transition-transform"
-                                />
+                                <div className="relative h-12 w-12 aspect-square shrink-0 rounded-full overflow-hidden flex items-center justify-center bg-white/95 dark:bg-white/95 border border-[#4A90E2]/30 shadow-lg shadow-[#4A90E2]/10 group-hover:border-[#4A90E2]/60 transition-colors">
+                                    <Image
+                                        src="/final-logo.png"
+                                        alt="FDC Innovation Labs"
+                                        fill
+                                        sizes="48px"
+                                        className="object-contain p-1.5 group-hover:scale-[1.04] transition-transform"
+                                    />
+                                </div>
                                 <div>
                                     <div className="text-xl font-bold gradient-text">FDC Innovation Labs</div>
                                     <div className="text-xs text-muted-foreground">AI Hub • Community in Uttarakhand</div>

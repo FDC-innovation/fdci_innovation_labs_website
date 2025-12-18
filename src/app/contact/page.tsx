@@ -100,8 +100,8 @@ export default function ContactPage() {
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                 >
                                     <Card className="glass-strong overflow-hidden border-2 border-transparent hover:border-[#4A90E2]/30 transition-all duration-300 group hover:glow-blue">
-                                        <CardContent className="p-6">
-                                            <div className="flex items-start space-x-4">
+                            <CardContent className="p-6">
+                                <div className="flex items-start space-x-4">
                                                 <motion.div
                                                     whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                                                     transition={{ duration: 0.5 }}
@@ -117,26 +117,26 @@ export default function ContactPage() {
                                                         {method.description}
                                                     </p>
                                                     {method.href ? (
-                                                        <a
+                                            <a
                                                             href={method.href}
                                                             target={method.external ? "_blank" : undefined}
                                                             rel={method.external ? "noopener noreferrer" : undefined}
                                                             className="text-lg font-semibold text-foreground/90 hover:text-primary transition-colors inline-flex items-center gap-2 group/link"
-                                                        >
+                                            >
                                                             {method.value}
                                                             {method.external && (
                                                                 <Globe className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity" />
                                                             )}
-                                                        </a>
+                                            </a>
                                                     ) : (
                                                         <p className="text-lg font-semibold text-foreground/90">
                                                             {method.value}
                                                         </p>
                                                     )}
-                                                </div>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
                                 </motion.div>
                             );
                         })}
@@ -149,7 +149,7 @@ export default function ContactPage() {
                             transition={{ duration: 0.6, delay: 0.4 }}
                         >
                             <Card className="glass-strong border-2 border-[#4A90E2]/20 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5">
-                                <CardContent className="p-6">
+                            <CardContent className="p-6">
                                     <div className="flex items-center justify-between">
                                         <div>
                                             <h3 className="font-bold text-lg mb-1">Need Immediate Help?</h3>
@@ -162,9 +162,9 @@ export default function ContactPage() {
                                                 Book Now
                                             </Link>
                                         </Button>
-                                    </div>
-                                </CardContent>
-                            </Card>
+                                </div>
+                            </CardContent>
+                        </Card>
                         </motion.div>
                     </motion.div>
 
@@ -195,17 +195,17 @@ export default function ContactPage() {
                                 {/* Gradient overlay on hover */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/0 to-[#7DB8F5]/0 group-hover:from-[#4A90E2]/5 group-hover:to-[#7DB8F5]/5 transition-all duration-300 z-10 pointer-events-none rounded-lg" />
                                 <div className="relative w-full aspect-[4/3] min-h-[500px]">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110204.85087217654!2d77.93490734335937!3d30.31559300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092934155f8fd1%3A0x3e690d2c3b2b6e0!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                                        width="100%"
-                                        height="100%"
-                                        style={{ border: 0, borderRadius: "1rem" }}
-                                        allowFullScreen
-                                        loading="lazy"
-                                        referrerPolicy="no-referrer-when-downgrade"
-                                        title="FDC Innovation Labs Location"
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110204.85087217654!2d77.93490734335937!3d30.31559300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092934155f8fd1%3A0x3e690d2c3b2b6e0!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0, borderRadius: "1rem" }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="FDC Innovation Labs Location"
                                         className="absolute inset-0 w-full h-full rounded-lg"
-                                    />
+                                />
                                 </div>
                             </CardContent>
                         </Card>

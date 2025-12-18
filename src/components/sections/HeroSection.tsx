@@ -28,7 +28,7 @@ export function HeroSection() {
                             <div className="absolute inset-0 bg-[#4A90E2]/20 blur-lg" />
                         </div>
                         <span className="text-sm font-semibold text-foreground">
-                            Uttarakhand's First AI Innovation Community
+                            AI Only Destination in Uttarakhand
                         </span>
                     </motion.div>
 

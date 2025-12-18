@@ -65,7 +65,10 @@ export function TestimonialsSection() {
                 >
                     <Card className="glass-strong relative overflow-hidden">
                         <CardContent className="p-8 md:p-12">
-                            <Quote className="w-12 h-12 text-primary/20 mb-6" />
+                            <Quote
+                                className="w-12 h-12 text-primary/20 mb-6"
+                                style={{ transform: "scaleX(-1)" }}
+                            />
 
                             <AnimatePresence mode="wait">
                                 <motion.div

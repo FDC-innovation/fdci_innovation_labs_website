@@ -66,7 +66,10 @@ export default function TestimonialsPage() {
                                             className="mb-6"
                                         >
                                             <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg`}>
-                                                <Quote className="w-8 h-8 text-white" />
+                                                <Quote
+                                                    className="w-8 h-8 text-white"
+                                                    style={{ transform: "scaleX(-1)" }}
+                                                />
                                             </div>
                                         </motion.div>
 

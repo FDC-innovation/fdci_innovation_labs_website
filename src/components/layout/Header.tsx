@@ -32,7 +32,7 @@ export function Header() {
 
     return (
         <motion.header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 rounded-b-[2.25rem] md:rounded-b-[3rem] ${
                 isScrolled 
                     ? "glass-strong border-b border-border/50 shadow-lg shadow-primary/5" 
                     : "bg-background/80 backdrop-blur-sm border-b border-transparent"
@@ -50,18 +50,18 @@ export function Header() {
                     >
                         <div className="relative">
                             {/* Animated glow effect */}
-                            <div className="absolute inset-0 bg-[#4A90E2]/30 blur-2xl rounded-2xl group-hover:bg-[#4A90E2]/40 transition-all duration-300" />
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/20 via-[#7DB8F5]/20 to-[#4A90E2]/20 blur-xl rounded-2xl group-hover:from-[#4A90E2]/30 group-hover:via-[#7DB8F5]/30 group-hover:to-[#4A90E2]/30 transition-all duration-300" />
+                            <div className="absolute inset-0 bg-[#4A90E2]/30 blur-2xl rounded-full group-hover:bg-[#4A90E2]/40 transition-all duration-300" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/20 via-[#7DB8F5]/20 to-[#4A90E2]/20 blur-xl rounded-full group-hover:from-[#4A90E2]/30 group-hover:via-[#7DB8F5]/30 group-hover:to-[#4A90E2]/30 transition-all duration-300" />
                             
                             {/* Logo container with premium styling */}
-                            <div className="relative bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md border-2 border-[#4A90E2]/30 rounded-lg p-2.5 md:p-3 shadow-xl shadow-[#4A90E2]/10 transition-all duration-300 group-hover:border-[#4A90E2]/60 group-hover:shadow-2xl group-hover:shadow-[#4A90E2]/30 group-hover:scale-105">
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="relative bg-white/95 dark:bg-white/95 border-2 border-[#4A90E2]/30 rounded-full overflow-hidden aspect-square h-[4.25rem] w-[4.25rem] md:h-[4.75rem] md:w-[4.75rem] shrink-0 flex items-center justify-center shadow-xl shadow-[#4A90E2]/10 transition-all duration-300 group-hover:border-[#4A90E2]/60 group-hover:shadow-2xl group-hover:shadow-[#4A90E2]/30 group-hover:scale-105">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#4A90E2]/5 to-[#7DB8F5]/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 <Image
-                                    src="/logo-fixed.svg"
+                                    src="/final-logo.png"
                                     alt="FDC Innovation Labs"
-                                    width={72}
-                                    height={72}
-                                    className="relative h-14 w-14 md:h-16 md:w-16 object-contain rounded-lg drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300"
+                                    fill
+                                    sizes="(max-width: 768px) 68px, 76px"
+                                    className="object-contain p-2 drop-shadow-lg group-hover:drop-shadow-2xl transition-transform duration-300"
                                     priority
                                 />
                             </div>

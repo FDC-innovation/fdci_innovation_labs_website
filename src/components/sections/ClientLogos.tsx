@@ -1,45 +1,43 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { HeartPulse, Brain } from "lucide-react";
+import { HeartPulse, Stethoscope, Brain, Leaf, Truck, Network } from "lucide-react";
 
 const clientLogos = [
     {
         name: "Karmahealth.ai",
         category: "HealthTech AI",
-        logo: null, // Using icon instead
         icon: HeartPulse,
         description: "AI-powered landing page"
     },
     {
         name: "Sybil",
         category: "Healthcare",
-        logo: "/clients/sybil.webp",
+        icon: Stethoscope,
         description: "AWS infra & React patient portal"
     },
     {
         name: "Millow.ai",
         category: "AI Platform",
-        logo: "/clients/millow.webp",
+        icon: Brain,
         description: "UI & API development"
     },
     {
         name: "Soulspace",
         category: "Wellness Tech",
-        logo: "/clients/soulspace.png",
+        icon: Leaf,
         description: "Digital wellness platform"
     },
     {
         name: "Wow Shippings",
         category: "Logistics",
-        logo: "/clients/wow-shippings.jpg", // Will use fallback
+        icon: Truck,
         description: "Logistics website"
     },
     {
         name: "FDC Ecosystem",
         category: "Enterprise",
-        logo: "/clients/fdc-ecosystem.png",
+        icon: Network,
         description: "Cloud & AI solutions"
     },
 ];
@@ -82,31 +80,13 @@ export function ClientLogos() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="glass-strong rounded-2xl p-6 flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300 group min-h-[160px]"
                         >
-                            {client.logo ? (
-                                <div className="w-full h-20 relative mb-3 flex items-center justify-center">
-                                    <Image
-                                        src={client.logo}
-                                        alt={client.name}
-                                        fill
-                                        className="object-contain filter brightness-90 group-hover:brightness-100 transition-all"
-                                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 16vw"
-                                    />
-                                </div>
-                            ) : client.icon ? (
-                                <motion.div
-                                    whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 0] }}
-                                    transition={{ duration: 0.5 }}
-                                    className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#4A90E2] to-[#7DB8F5] flex items-center justify-center mb-3 group-hover:shadow-lg group-hover:shadow-[#4A90E2]/30 transition-all"
-                                >
-                                    <client.icon className="w-8 h-8 text-white" />
-                                </motion.div>
-                            ) : (
-                                <div className="w-16 h-16 rounded-xl bg-gradient-primary/20 flex items-center justify-center mb-3 group-hover:bg-gradient-primary/30 transition-colors">
-                                    <span className="text-2xl font-bold text-primary">
-                                        {client.name.charAt(0)}
-                                    </span>
-                                </div>
-                            )}
+                            <motion.div
+                                whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 0] }}
+                                transition={{ duration: 0.5 }}
+                                className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#4A90E2] to-[#7DB8F5] flex items-center justify-center mb-3 group-hover:shadow-lg group-hover:shadow-[#4A90E2]/30 transition-all"
+                            >
+                                <client.icon className="w-8 h-8 text-white" />
+                            </motion.div>
                             <p className="text-xs font-semibold text-center mb-1">
                                 {client.name}
                             </p>
