@@ -174,9 +174,9 @@ export default function AboutPage() {
                 tech education and real-world opportunities.
               </p>
               <p>
-                Today, we're proud to be Uttarakhand's first AI-focused innovation community,
-                bridging the gap between local talent and global opportunities. We don't just build
-                software—we build futures.
+                Today, we&rsquo;re proud to be Uttarakhand&rsquo;s first AI-focused innovation
+                community, bridging the gap between local talent and global opportunities. We
+                don&rsquo;t just build software—we build futures.
               </p>
             </div>
           </motion.div>
@@ -426,7 +426,7 @@ export default function AboutPage() {
                 "Creates beautiful, user-friendly interfaces and develops efficient algorithms. Combines design thinking with technical expertise to deliver exceptional user experiences.",
             },
             {
-              name: "Mujeeb",
+              name: "Mujeeb Rehman",
               role: "Finance Director & Operations Manager",
               image: "/team/mujeeb.jpg",
               icon: Calculator,
@@ -542,8 +542,9 @@ export default function AboutPage() {
           <p className="text-foreground/90">
             FDC Innovation Labs is a proud initiative of Fast Data Connect, a{" "}
             {siteConfig.companyType} company based in {siteConfig.location}. With the backing of our
-            parent company's expertise and resources, we're able to deliver enterprise-grade
-            solutions while maintaining our focus on community empowerment and student success.
+            parent company&rsquo;s expertise and resources, we&rsquo;re able to deliver
+            enterprise-grade solutions while maintaining our focus on community empowerment and
+            student success.
           </p>
         </motion.div>
       </section>
