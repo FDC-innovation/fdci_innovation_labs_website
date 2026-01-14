@@ -398,7 +398,7 @@ export default function AboutPage() {
             {
               name: "Sunil Butola",
               role: "DevOps & Cloud Engineer",
-              image: "/team/sunil-aws-devops.jpeg",
+              image: "/team/defaultUser.jpeg",
               icon: Cloud,
               gradient: "from-[#7DB8F5] via-[#4A90E2] to-[#5BA0E8]",
               hasImage: true,
