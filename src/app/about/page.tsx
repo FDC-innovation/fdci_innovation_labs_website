@@ -417,7 +417,7 @@ export default function AboutPage() {
             },
             {
               name: "Ayush Hemdam",
-              role: "UI/UX & Algorithm Developer",
+              role: "Frontend Developer",
               image: "/team/ayush.jpg",
               icon: Palette,
               gradient: "from-[#4A90E2] via-[#5BA0E8] to-[#7DB8F5]",
