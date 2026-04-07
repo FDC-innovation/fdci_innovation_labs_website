@@ -252,6 +252,21 @@ export const testimonials = [
 
 export const projects = [
   {
+    title: "Chalchitra",
+    industry: "In-House Product",
+    description: "Our in-house AI-native video editing and podcasting platform. Chalchitra brings intelligent automation to video production — from smart cutting and captions to podcast-ready exports, all powered by AI built at FDC Innovation Labs.",
+    tech: ["Next.js", "Python", "AI/ML", "FFmpeg", "AWS", "TypeScript"],
+    result: "An end-to-end AI-native platform that drastically reduces video editing and podcast production time for creators",
+    link: "https://fdc-video-ai-landing-4dep.vercel.app/",
+    image: "/projects/chalchitra.jpg",
+    images: [
+      "/chalchitra-pics/demo-pic-one.png",
+      "/chalchitra-pics/demo-pic-two.png",
+      "/chalchitra-pics/demo-pic-three.png",
+      "/chalchitra-pics/demo-pic-four.png",
+    ],
+  },
+  {
     title: "AI-Powered Social Media Manager",
     industry: "SaaS - Our IP",
     description: "Our proprietary AI-powered social media management platform that automates content creation, scheduling, and analytics. Built as our own intellectual property with advanced AI capabilities.",
